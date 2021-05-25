@@ -9,6 +9,21 @@ As such, to be able to run it within windows, there are 2 main options:
 
 ## Instructions
 
+### Windows Subsystem for Linux (WSL)
+
+The instructions are from [WSL instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+1. Open PowerShell
+2. Run: `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`.
+   This enables the Windows Subsystem for Linux.
+3. Run: `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+   This will enable the **Virtual Machine Platform** optional feature.
+4. Restart the computer.
+5. Download and install the [WSL2 Linux Kernel](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+6. Run: `wsl --set-default-version 2`. This sets the default WSL version to 2.
+
+### Docker
+
 1. [Download Docker](https://www.docker.com/get-started) and install it
 	* **Note**: No need to create an account or log in.
 	* **Note**: Select 'Add to Path' option
@@ -18,7 +33,7 @@ As such, to be able to run it within windows, there are 2 main options:
 5. Run the docker container using: `docker run --name xesmf -v ${pwd}:/ds -p 8888:8888 xesmf`
 
 
-Other useful functions
+## Other useful functions/commands
 
 * To add packages to the image, run `docker exec -it xesmf bash` from another PowerShell instance.
   You must start the container first by running: `docker start -i xesmf`
