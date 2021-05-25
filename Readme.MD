@@ -34,13 +34,13 @@ The instructions are from [WSL instructions](https://docs.microsoft.com/en-us/wi
 	* **Note**: Select 'Add to Path' option
 2. Download the `Dockerfile` file from this repository
 3. Start PowerShell and change directory (`cd`) into the folder you are using
-4. Run: `docker build -t xesmf -f .\Dockerfile .` and wait for it to complete
-5. Run the docker container using: `docker run --name xesmf -v ${pwd}:/ds -p 8888:8888 xesmf`
+4. Run: `docker build -t xesmf-img -f .\Dockerfile .` and wait for it to complete
+5. Run the docker container using: `docker run --name xesmf-container -v ${pwd}:/ds -p 8888:8888 xesmf-img`
 
 
 ## Other useful functions/commands
 
-* To add packages to the image, run `docker exec -it xesmf bash` from another PowerShell instance.
-  You must start the container first by running: `docker start -i xesmf`
+* To add packages to the image, run `docker exec -it xesmf-container bash` from another PowerShell instance.
+  You must start the container first by running: `docker start -i xesmf-container`
 * Stop all containers: `docker stop $(docker container ls -aq)`
 * Remove all containers: `docker rm $(docker container ls -aq)`
