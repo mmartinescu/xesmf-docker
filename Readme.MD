@@ -21,6 +21,10 @@ The instructions are from [WSL instructions](https://docs.microsoft.com/en-us/wi
 4. Restart the computer.
 5. Download and install the [WSL2 Linux Kernel](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 6. Run: `wsl --set-default-version 2`. This sets the default WSL version to 2.
+7. Install your preferred Linux distribution from the (MS Store](https://aka.ms/wslstore). Some examples:
+	* [Ubuntu 20.04](https://www.microsoft.com/store/apps/9n6svws3rx71)
+	* [Debian](https://www.microsoft.com/store/apps/9MSVKQC78PK6)
+8. **[Optional]** [Install Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started)
 
 ### Docker
 
