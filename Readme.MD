@@ -36,7 +36,7 @@ The instructions are from [WSL instructions](https://docs.microsoft.com/en-us/wi
 3. Start PowerShell and change directory (`cd`) into the folder you are using
 4. Run: `docker build -t xesmf-img -f .\Dockerfile .` and wait for it to complete
 5. Run the docker container using: `docker run --name xesmf-container -v ${pwd}:/ds -p 8888:8888 xesmf-img`
-
+6. In a browser, navigate to `http://127.0.0.1:8888/tree`
 
 ## Other useful functions/commands
 
