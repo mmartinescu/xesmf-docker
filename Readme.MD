@@ -28,6 +28,7 @@ The instructions are from [WSL instructions](https://docs.microsoft.com/en-us/wi
 
 ### Docker
 
+0. Run steps 1 to 6 from *Windows Subsystem for Linux (WSL)*.
 1. [Download Docker](https://www.docker.com/get-started) and install it
 	* **Note**: No need to create an account or log in.
 	* **Note**: Select 'Add to Path' option
